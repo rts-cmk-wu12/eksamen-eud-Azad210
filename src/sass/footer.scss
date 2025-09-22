@@ -1,0 +1,64 @@
+@use "variables.scss" as *;
+
+.footer{
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+  border-top: 2px solid #e0e0e0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+
+
+
+  
+
+   a{
+    text-decoration: none;
+    color: $text-color;
+  }
+
+
+
+  &__image{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo-and-name{
+    display: flex;
+    gap: 10px;
+     align-items: center;
+  }
+
+  &__icons{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-top: 10px;
+   
+    
+  }
+
+  &__about-row{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+
+
+   &__discover-row{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+   
+  }
+
+   &__support-row{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+}
