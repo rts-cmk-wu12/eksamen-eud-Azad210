@@ -1,0 +1,42 @@
+@use "variables.scss" as *;
+
+.search {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+ 
+  &__label {
+    position: relative;
+    display: inline-block;
+    
+   
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: black ;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    border: none;
+    padding: 12px 16px;
+    width: 327px;
+    font-size: 1rem;
+    height: 25px;
+    border: 1px solid rgb(179, 174, 174);
+    border-radius: 35px;
+    opacity: 0.3;
+
+
+    &:focus {
+      transition: border 0.15s ease-in-out;
+      outline: none;
+    }
+
+  }
+}

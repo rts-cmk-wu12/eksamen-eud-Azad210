@@ -1,0 +1,56 @@
+@use "variables.scss" as *;
+
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto; 
+ 
+
+
+    &__btn{
+        padding: 12px 12px;
+        width: 100%;
+        background-color: $register-color;
+        color: $white-color;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    &__forgot-password{
+    color: $text-color;
+    }
+
+    form{
+       border: 2px solid #e0e0e0;
+       padding: 24px 24px;
+       border-radius: 8px ;
+  
+    }
+
+    input{
+        border-radius: 8px;
+        padding: 12px 12px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    
+    }
+}
+
+.form-login{
+    width: 320px;
+    height: 320px;
+}
+
+// Herfra og ned er kun styling for nyhedsbrev siden som hedder contact, 
+// samme classname som er brugt i den, overskriften er det eneste som er blevet tilføjet til den
+
+.tilmeld-nyhedsbrev{
+    justify-content: center;
+    display: flex;
+}

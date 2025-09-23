@@ -13,10 +13,12 @@ export const Footer = () => {
  <section className="footer">
 
 <div className="footer__socail-media">
+   <Link to="/">
 <div className="footer__logo-and-name">
  <img className={"footer__image"} src={logofooter} alt="logo" />
- <h3>SwapHub</h3>
+ <h2>SwapHub</h2>
 </div>
+</Link>
   <a href="https://x.com/" target="_blank">
     <FaXTwitter className="footer__icons" />
   </a>
@@ -40,7 +42,7 @@ export const Footer = () => {
  <Link to="/">How it work</Link>
   <Link to="/">Community guidelines</Link>
    <Link to="/">Our mission</Link>
-    <Link to="/">Contact us</Link>
+    <Link to="/contact">Contact us</Link>
 </div>
 
 <div className="footer__discover-row">
