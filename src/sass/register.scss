@@ -1,0 +1,50 @@
+@use "variables.scss" as *;
+
+
+.register-container{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    margin: 0 auto; 
+
+
+    
+&__signup-btn{
+ background-color: $register-color;
+color: $white-color;
+}
+
+    
+}
+
+
+.register-form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 320px;
+height: auto;
+}
+
+    form{
+       border: 2px solid #e0e0e0;
+       padding: 24px 24px;
+       border-radius: 8px ;
+  
+    }
+
+    
+
+    input{
+        border-radius: 8px;
+        padding: 12px 12px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    
+    }
+
+ 
+

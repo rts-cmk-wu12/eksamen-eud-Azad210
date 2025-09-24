@@ -22,6 +22,12 @@
             ],
             "~details/*": [
                 "src/pages/details/*"
+            ],
+            "~validering/*": [
+                "src/components/validering-input/*"
+            ],
+            "~validering-input/*": [
+                "src/components/validering-input/*"
             ]
         }
     }

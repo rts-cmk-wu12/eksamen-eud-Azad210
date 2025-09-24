@@ -29,14 +29,10 @@ function Home() {
 
 
       <div className="frontpage-container">
-        <div className="filter-bar">
-          <SearchBar />
-      <div className="filter-bar__tag-toogle">
-        <button>New</button>
-        <button>Price ascending</button>
-        <button>Price descending</button>
-      </div>
-        </div>
+        <SearchBar />
+          
+     
+        
         <div className="product-info-card">
           {items.map((item) => (
             <Link key={item.id} className="link" to={`/details/${item.id}`}>
