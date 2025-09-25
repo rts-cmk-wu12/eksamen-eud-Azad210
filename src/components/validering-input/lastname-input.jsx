@@ -19,7 +19,7 @@ export default function LastNameInput(props) {
     }
  return (
 <>
-<input ref={inputElement}  onInput={inputHandler} name="lastName" placeholder="Last Name" {...props} required />
+<input ref={inputElement}  onInput={inputHandler} name="lastName" placeholder="Last Name..." {...props} required />
 {error && <p>{error} </p> }
 </>
    )

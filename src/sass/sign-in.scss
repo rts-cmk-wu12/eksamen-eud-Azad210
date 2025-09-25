@@ -27,12 +27,13 @@
        border: 2px solid #e0e0e0;
        padding: 24px 24px;
        border-radius: 8px ;
-  
+       
     }
 
     input{
         border-radius: 8px;
         padding: 12px 12px;
+        font-family: $font-default;
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 10px;
@@ -43,6 +44,7 @@
 .form-login{
     width: 320px;
     height: 320px;
+    font-family: $font-default;
 }
 
 // Herfra og ned er kun styling for nyhedsbrev siden som hedder contact, 
@@ -51,4 +53,5 @@
 .tilmeld-nyhedsbrev{
     justify-content: center;
     display: flex;
+    font-family: $font-default;
 }

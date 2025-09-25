@@ -19,7 +19,7 @@ export default function EmailInput(props) {
     }
  return (
 <>
-<input ref={inputElement}  onInput={inputHandler} name="email" placeholder="Email" {...props} required />
+<input ref={inputElement}  onInput={inputHandler} name="email" placeholder="Email..." {...props} required />
 {error && <p>{error} </p> }
 </>
    )

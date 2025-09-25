@@ -19,7 +19,7 @@ export default function PasswordInput(props) {
     }
  return (
 <>
-<input ref={inputElement}  onInput={inputHandler} name="password" type="password" placeholder="Password" {...props} required />
+<input ref={inputElement}  onInput={inputHandler} name="password" type="password" placeholder="Password..." {...props} required />
 {error && <p>{error} </p> }
 </>
    )

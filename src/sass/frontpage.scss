@@ -6,6 +6,8 @@
   flex-direction: column; 
   margin: 0 auto;
   
+  
+  
 }
 
 .product-info-card {
@@ -25,7 +27,10 @@
 
   p{
    color: $text-color;
-  
+  font-family: $font-default;
+  width: 250px;
+  height: 20px;
+  font-weight: bold;
   }
 }
 

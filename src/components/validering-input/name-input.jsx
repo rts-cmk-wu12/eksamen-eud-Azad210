@@ -19,7 +19,7 @@ export default function FirstNameInput(props) {
     }
  return (
 <>
-<input ref={inputElement}  onInput={inputHandler} name="firstName" placeholder="First Name" {...props} required />
+<input ref={inputElement}  onInput={inputHandler} name="firstName" placeholder="First Name..." {...props} required />
 {error && <p>{error} </p> }
 </>
    )

@@ -38,9 +38,9 @@ function ListingDetail() {
           />
         </div>
         <div className="container-in-detail-page__text">
-          <p>{data.title}</p>
+          <p className="container-in-detail-page__title">{data.title}</p>
           <p>{data.description}</p>
-          <p>{data.asset.createdAt}</p>
+          <p className="container-in-detail-page__created-text">On SwaoHub since: {data.asset.createdAt}</p>
         </div>
 
       </section>
