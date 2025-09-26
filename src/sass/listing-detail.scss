@@ -6,6 +6,7 @@
     align-items: center;
     gap: 20px;
     height: 100vh;
+    padding: 30px;
 
     img{
     width: 415px;
@@ -17,23 +18,22 @@
 
 
     &__text{
-    width: 415px;
+   
     height: 415px;
     display: flex;
-     word-spacing: 2px;
+
      font-family: $font-default;
     flex-direction: column;
+    font-size: $font-size-small;
     
     }
 
     &__title{
     font-weight: bold;
+    font-size: $font-size-medium;
     }
 
-    &__created-text{
-       row-gap: 10px;
-       word-spacing: 2px;
-    }
+  
 
 
 }

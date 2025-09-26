@@ -26,7 +26,7 @@
   padding: 10px;
 
   p{
-   color: $text-color;
+  color: $text-color;
   font-family: $font-default;
   width: 250px;
   height: 20px;
@@ -43,13 +43,8 @@ object-fit: cover;
 }
 
 
-.filter-bar{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-justify-content: space-evenly;
 
 
-}
+
 
 

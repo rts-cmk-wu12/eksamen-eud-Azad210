@@ -32,7 +32,7 @@ const [message, Setmessage] = useState ("")
     })
 
     if (response.ok) {
-      Setmessage("You are now signed up ✓ →")
+      Setmessage ("You are now signed up ✓ →")
        formElement.current.reset()
     } else {
       Setmessage("Something went wrong, try again later")

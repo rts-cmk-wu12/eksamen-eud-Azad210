@@ -3,12 +3,13 @@ import { Header } from "~components/header.jsx";
 import { Footer } from "~components/footer.jsx";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SearchBar } from "~components/searchbar.jsx";
+import  Search  from "~components/searchbar.jsx";
 
 
 
 function Home() {
   const [items, setItems] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -20,6 +21,15 @@ function Home() {
     fetchItems();
   }, []);
 
+  const searchHandler = value => {
+    setSearch(value); 
+  }
+
+  const filterItems = items.filter(item => 
+    item.title.toLowerCase().includes(search.toLowerCase())
+  )
+  
+
   return (
     <>
 
@@ -29,12 +39,12 @@ function Home() {
 
 
       <div className="frontpage-container">
-        <SearchBar />
-          
-     
+        <Search searchHandler={searchHandler} />
+
+
         
         <div className="product-info-card">
-          {items.map((item) => (
+          {filterItems.map((item) => (
             <Link key={item.id} className="link" to={`/details/${item.id}`}>
               <div className="product-card">
                 <img src={item.asset.url} alt={item.name} />

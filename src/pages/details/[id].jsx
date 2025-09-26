@@ -22,7 +22,7 @@ function ListingDetail() {
     fetchData()
   }, [id])
 
-  console.log(data)
+ 
   if (!data) return null
 
   return (
@@ -32,7 +32,6 @@ function ListingDetail() {
       <section className="container-in-detail-page">
         <div className="container-in-detail-page__picture">
           <img
-            className=""
             src={data.asset.url}
             alt={data.title}
           />
@@ -45,13 +44,7 @@ function ListingDetail() {
 
       </section>
 
-      <section>
-        <img
-          className=""
-          src={data.user.listings}
-
-        />
-      </section>
+  
       <Footer />
     </>
   )

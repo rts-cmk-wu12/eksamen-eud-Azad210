@@ -1,16 +1,22 @@
 import { CiSearch } from "react-icons/ci";
 import "~sass/searchbar.scss"
 
+const Search = ({ searchHandler }) => {
+    const handleSearchInputChange = e => {
+      searchHandler(e.target.value); 
+    };
 
-export const SearchBar = () => {
+
+
     return (
         <>
             <div className="search">
                 <label className="search__label">
-                    <CiSearch class="search__icon"/>
+                    <CiSearch className="search__icon"/>
                     <input
                         type="text"
                         id="search-input"
+                         onChange={handleSearchInputChange}
                         className="search__input"
                         placeholder="Search"
                     />
@@ -20,3 +26,5 @@ export const SearchBar = () => {
         </>
     )
 }
+
+export default Search;

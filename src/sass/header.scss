@@ -44,6 +44,7 @@
     align-items: center;
     font-family: $font-default;
     cursor: pointer;
+    font-size: $font-size-buttons;
 }
 
   &__navigate {
@@ -69,6 +70,7 @@ border-radius: 8px;
 padding: 8px 16px;
 border: none;
 font-family: $font-default;
+font-size: $font-size-buttons;
   }
 
   .register-btn{
@@ -78,6 +80,7 @@ border-radius: 8px;
 border: none;
 padding: 8px 16px;
 font-family: $font-default;
+font-size: $font-size-buttons;
 
   }
 
